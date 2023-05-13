@@ -1,0 +1,28 @@
+@host = http://localhost:3000
+
+GET {{host}}/api/inmuebles
+
+
+###
+POST {{host}}/api/inmuebles
+Content-Type: application/json
+
+{
+   "piso": 5,
+    "letra": "A",
+    "extension": 90,
+    "num_hab": 2,
+    "alquilado": true,
+    "nombre": "daniela",
+    "mail": "daniela@ga.com"
+}
+###
+PUT {{host}}/api/inmuebles/645df5b474243977b92a2536
+
+{
+   "piso": 4,
+    "letra": "Z"
+}
+
+###
+DELETE {{host}}/api/inmuebles/1235
